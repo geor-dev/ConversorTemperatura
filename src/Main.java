@@ -28,7 +28,7 @@ public class Main {
 
                 }else if(tipo.equals("K")){
                     double resultado;
-                    resultado = temperatura-273;
+                    resultado = temperatura-273.0;
                     System.out.printf("Em Kelvin vale: %.2f",resultado);
                 }else{
                     System.out.println("O valor ja esta na escala solicitada");
@@ -37,12 +37,12 @@ public class Main {
             case 2:
                 if(!tipo.equals("F") && tipo.equals("C")){
                     double resultado;
-                    resultado = temperatura*(9.0/5.0)+32;
+                    resultado = temperatura*(9.0/5.0)+32.0;
                     System.out.printf("Em Celsius vale: %.2f",resultado);
 
                 }else if(tipo.equals("K")){
                     double resultado;
-                    resultado = (temperatura-273)*1.8 + 32;
+                    resultado = (temperatura-273)*1.8 + 32.0;
                     System.out.printf("Em Kelvin vale: %.2f",resultado);
                 }else {
                     System.out.println("O valor ja esta na escala solicitada");
@@ -53,12 +53,12 @@ public class Main {
             case 3:
                 if(!tipo.equals("K") && tipo.equals("C")){
                     double resultado;
-                    resultado = temperatura+273;
+                    resultado = temperatura+273.0;
                     System.out.printf("O valor em Celsius vale: %.2f",resultado);
 
                 }else if(tipo.equals("F")){
                     double resultado;
-                    resultado = (temperatura-32)*(5.0/9.0) + 273;
+                    resultado = (temperatura-32)*(5.0/9.0) + 273.0;
                     System.out.printf("O valor em Fahrenheit vale: %.2f",resultado);
                 }else{
                     System.out.println("O valor ja está na escala solicitada");
